@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Feed Example</title>
+    <link href="../laba11/front/front.css" type="text/css" rel="stylesheet" />
+    <link href="../laba11/style_home3/home6.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page">
+       <main class="content-area">
+            <div class="post-creation-container">
+                <button class="back-button">&lt;</button>
+                <h2>Новый пост</h2>
+
+                <div class="photo-area empty" id="photoArea">
+                    <img src="eee.png" alt="Add photo" class="add-photo-icon" id="defaultIcon">
+                    <button class="add-photo-button" id="addPhotoButton">Добавить фото</button>
+                </div>
+
+                <div class="photo-slider-container" id="photoSliderContainer">
+                    <div class="photo-slider" id="photoSlider">
+                    </div>
+                    <button class="photo-slider-button prev" onclick="prevSlide()">&lt;</button>
+                    <button class="photo-slider-button next" onclick="nextSlide()">&gt;</button>
+                    <div class="photo-slider-indicator" id="photoIndicator">1/1</div>
+                </div>
+
+                <button class="add-photo-button-secondary" id="addPhotoSecondary">
+                    <img src="Plus-square161.png" alt="Добавить фото" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    Добавить фото
+                </button>
+
+                <div class="caption-area">
+                    <textarea id="caption" placeholder="Добавьте подпись..."></textarea>
+                </div>
+
+                <button class="share-button" id="shareButton" disabled>Поделиться</button>
+            </div>
+        </main>
+    </div>
+
+    <input type="file" id="photoInput" accept="image/*" style="display: none;" multiple>
+
+<script src="script.js"></script>
+
+</body>
+</html>

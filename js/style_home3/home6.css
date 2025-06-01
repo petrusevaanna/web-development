@@ -1,0 +1,231 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;   
+    height: 100vh;
+}
+
+.page {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f4f4;  
+}
+.sidebar {
+    width: 60px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.sidebar__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.sidebar__link:hover {
+    background-color: #f0f0f0;
+}
+ .content-area {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+            padding: 20px;
+        }
+
+        
+        .post-creation-container {
+            background-color: #fff;
+            border-radius: 0px;   
+            padding: 20px;
+            width: 100%;       
+            max-width: 600px;   
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        
+        .back-button {
+            border: none;
+            background-color: transparent;
+            color: #000;      
+            font-size: 18px;
+            cursor: pointer;
+            align-self: flex-start;   
+            margin-bottom: 10px;      
+        }
+
+        
+        .photo-area {
+            background-color: #f0f0f0; 
+            border-radius: 0;  
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+            min-height: 300px;     
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; 
+        }
+
+         .add-photo-icon {
+           width: 50px; 
+           height: 50px; 
+           margin-bottom: 10px;
+         }
+
+        .photo-area.empty {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo-area img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; 
+        }
+
+
+        .photo-slider-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            display: none; 
+        }
+
+        .photo-slider {
+           display: flex; 
+           transition: transform 0.3s ease; 
+           height: 100%; 
+        }
+
+        .photo-slider img {
+            width: 100%;
+            flex-shrink: 0;
+            object-fit: contain; 
+            max-height: 300px; 
+        }
+
+        .photo-slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .photo-slider-button.prev {
+            left: 10px;
+        }
+
+        .photo-slider-button.next {
+            right: 10px;
+        }
+
+        .photo-slider-indicator {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 0.8em;
+            color: white;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+        }
+
+        .add-photo-button {
+            background-color: #000;    
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .add-photo-button-secondary {
+            background-color: transparent;
+            color: #007bff;
+            border: none;          
+            padding: 0;         
+            cursor: pointer;
+            font-size: 14px;      
+            text-decoration: none; 
+            display: inline-block;
+            text-align: left;      
+            margin-top: 5px;        
+            align-self: flex-start;   
+            margin-bottom: 20px;
+        }
+
+        .add-photo-button-secondary:hover {
+            text-decoration: underline; 
+        }
+
+        .caption-area {
+            margin-bottom: 20px;
+        }
+
+        .caption-area textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;           
+            border-bottom: 1px solid #ccc;  
+            border-radius: 0;      
+            font-size: 14px;      
+            resize: none;         
+            outline: none;          
+        }
+         .caption-area textarea::placeholder {
+            color: #ccc;       
+        }
+
+    
+        .share-button {
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: auto;  
+        }
+
+        .share-button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }

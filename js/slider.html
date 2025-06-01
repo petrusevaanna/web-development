@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Feed Example</title>
+    <link href="../laba11/front/front.css" type="text/css" rel="stylesheet" />
+    <link href="../laba11/style_home3/home3.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page">
+        <aside class="sidebar">
+            <nav class="sidebar__nav">
+                <a href="#" class="sidebar__link"><img src="Home24.png" alt="Home" /></a>
+                <a href="#" class="sidebar__link"><img src="User.png" alt="Profile" /></a>
+                <a href="#" class="sidebar__link"><img src="Plus.png" alt="Add Post" /></a>
+            </nav>
+        </aside>
+        <main class="content-area">
+            <div class="container">
+
+                <div class="post">
+                    <div class="post__header">
+                        <div class="post__author-container">
+                          <img class="post__avatar" src="home.png" alt="аватарка" />
+                          <div class="post__author">Валя Дьяконова</div>
+                        </div>
+                        <img class="edit-icon" src="pencil.png" alt="редактировать" />
+                      </div>
+
+                    <div class="slider-container">
+                        <div class="slider" id="slider1">
+                            <img class="post__image" src="winter.png" alt="Зимний пейзаж" />
+                            <img class="post__image" src="fish.png" alt="" />
+                            <img class="post__image" src="home.png" alt="" />
+                        </div>
+                        <button class="slider-button prev" onclick="prevSlide('slider1')">&lt;</button>
+                        <button class="slider-button next" onclick="nextSlide('slider1')">&gt;</button>
+                    </div>
+                    <div class="post__actions">
+                        <button class="like-button">
+                            <img src="heart.png" alt="like" class="like-icon">
+                            <span class="like-count">203</span>
+                          </button>                          
+                    </div>
+                    <div class="post__text">
+                        Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувше
+                    </div>
+                    <div class="post__date">2 часа назад</div>
+                </div>
+
+                <div class="post">
+                    <div class="post__header">
+                        <img class="post__avatar" src="Avatar.png" alt="аватарка" />
+                        <div class="post__author">Лена Дьяконова</div>
+                    </div>
+                    <img class="post__image" src="fish.png" alt="рыбы" />
+                    <div class="post__actions">
+                        <button class="like-button">
+                            <img src="heart.png" alt="like" class="like-icon">
+                            <span class="like-count">105</span>
+                          </button>                          
+                    </div>
+                     <div class="post__date">1 день назад</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+<script src="script2.js"></script>
+</body>
+</html>
