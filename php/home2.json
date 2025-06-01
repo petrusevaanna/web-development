@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "user_id": 1,
+        "avatar": "imegs/home.png",
+        "author": "Валя Дьяконова",
+        "image": "imegs/winter.png",
+        "content": "Так красиво сегодня на улице! Настоящая зима...",
+        "date": "2 часа назад",
+        "likes": "203"
+    },
+    {
+        "id":2,
+        "user_id": 2,
+        "avatar": "imegs/Avatar.png",
+        "author": "Лена Дьяконова",
+        "image": "imegs/fish.png",
+        "content": "Какой прекрасный улов!",
+        "date": "1 день назад",
+        "likes": "150"
+    }
+]
+
